@@ -2,6 +2,7 @@ import ListGroup from "react-bootstrap/ListGroup";
 import { MdDeleteForever } from "react-icons/md";
 import { useDispatch, useSelector } from "react-redux";
 import { deleteNote } from "../redux/NotesSlice";
+import {TransitionGroup, CSSTransition} from 'react-transition-group'
 function Notes() {
   const dispatch = useDispatch();
   const { notes } = useSelector((state) => state.notes);
